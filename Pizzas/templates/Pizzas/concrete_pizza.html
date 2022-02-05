@@ -1,0 +1,8 @@
+{% extends 'Pizzas/index.html' %}
+
+{% block content %}
+    <h4>{{pizza.name}}</h4>
+    {% for i in concrete_pizza %}
+        <li>{{i.name}}</li>
+    {% endfor %}
+{% endblock %}
